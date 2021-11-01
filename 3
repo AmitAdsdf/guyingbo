@@ -1,3 +1,4 @@
+输入10个数，打印 10个数 求和结果  
 list=[]
 print（len(list)）
 for i in list:
@@ -7,3 +8,144 @@ for i in range (len(list))
    sum=int(list[i])+sum
    print()
    print()
+
+
+从键盘 依次输入 10个数 最后打印最大的数  10个数 的和  平均数  
+List=[]
+Print(len（list))
+   for b in range(0,10,+1):
+   a=int(input("请输入："))
+   list.append(a)
+print(list)
+sum=0
+best=0
+for i in range()
+
+使用random 模块，如何产生 50~150之间的数
+import random
+list=[]
+print（len(list)）
+random(50,150)=a
+
+从键盘输入任意三边，判断是否能形成三角形，若可以，则判断形成什么三角形（结果判断：等腰，等边，直角，普通，不能形成三角形。）
+
+   a=int(input("请输入："))
+   b=int(input("请输入："))
+   c=int(input("请输入："))
+   if  a=b&a=c|b=a&b=c|c=a&c=b:
+      print("该三角形为等腰三角形")
+   if  a=b=c
+      print("等边三角形")
+   if  a^2+b^2=c^2|b^2+c^2=a^2|c^2+a^2=b^2
+      print("该三角形称为直角三角形")
+   if  a+b>c|b+c>a|c+a>b
+      print("该三角形为普通三角形")
+   if  a+b<=c|b+c<=a|c+a<=b
+      print("该三角形为不是三角形")
+ 有以下两个数，使用+，-号实现两个数的调换。
+   A=56
+   B=78
+   C=56+78
+   A=C-A
+   B=C-B
+   print(A)
+   print(B)
+ 实现登陆系统的三次密码输入错误锁定功能（用户名：root,密码：admin）
+   A=root
+   B=admin
+   for i in range (0,3)
+      c=input("用户名")
+      d=input("密码")
+      if c=root&d=admin
+      print("输入用户名密码正确")
+      else
+      print("输入用户名密码错误")
+      if i>=3
+      print("该账户已锁定")
+ #编程实现下列图形的打印
+a=int(input("请输入层数："))
+for i in range(a):
+    print(" "*(a-1-i)+'*'*(i+1)+'*'*i)
+ #编程实现99乘法表的倒叙打印
+for i in range(9,0,-1):
+    for j in range(1,i+1):
+        print("%d*%d=%2d\t"%(j,i,i*j),end='')
+    print()
+#一只青蛙掉在井里了，井高20米，青蛙白天网上爬3米，晚上下滑2米，问第几天能出来？请编程求出。
+h=20
+t=1
+while True:
+    if 3*t-2*(t-1)==20:
+        break
+    elif 3*t-2*t==20:
+        break
+    t=t+1
+print("第%d天出来"%t)
+#用循环来实现20以内的数的阶乘。（1! +2!+3!+…..+20!）
+num=1
+sum=0
+for i in range(1,20+1):
+    num *=i
+    sum=num+sum
+
+    print(num)
+print("\n")
+print("20阶乘总和为:%d"%sum)
+
+
+
+import random
+randint = random.randint(10, 20)  # 随机生成数字的范围：int   []
+print(randint)
+i=3
+n=5
+while i>=1:
+    print("你还有%d次机会"%i)
+    print("您还有%d个金币"%n)
+    num=int(input("请输入您猜的数字"))
+    if num==randint:
+        print("恭喜你猜对了")
+        n=n+3
+        randint = random.randint(10, 20)  # 随机生成数字的范围：int   []
+        print(randint)
+        continue
+    elif num>randint:
+        print("猜大了")
+    elif num<randint:
+        print("猜小了")
+    else:
+        print("猜错了,继续猜")
+    i=i-1
+    n=n-1
+    if i<1:
+        print("机会已用光是否用金币换取机会")
+        b=input()
+        a='是' 
+
+        if a==b:
+            e = (n + i) /2
+            print("您最多可以兑换%d个金币" % e)
+            c=int(input("请输入兑换的金币"))
+            if n>=c and n>=i:
+                i=c
+                n=n-c
+                print("充值成功")
+            else:
+                print("余额不足")
+
+        else:
+            break
+
+
+print("您还剩余%d个金币"%n)
+
+
+n=int(input("请输入："))
+i=1
+j=1
+while i<=n:
+    for j in range(1,i+1):
+        print("%d*%d=%2d\t"%(j,i,i*j),end='')
+    print()
+    i=i+1
+print()
